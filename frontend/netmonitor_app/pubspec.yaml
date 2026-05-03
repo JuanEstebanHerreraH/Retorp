@@ -1,0 +1,58 @@
+name: retorp
+description: Retorp - Monitoreo de red local
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # HTTP
+  http: ^1.2.0
+  
+  # Estado y reactividad
+  provider: ^6.1.2
+  
+  # Fuentes y UI
+  google_fonts: ^6.2.1
+  
+  # Iconos
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10
+  
+  # Animaciones
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  
+  # Notificaciones locales
+  flutter_local_notifications: ^17.1.2
+  
+  # Formato de fechas
+  intl: ^0.19.0
+  
+  # Almacenamiento local (preferencias)
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
+    - assets/icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icon.png"
+    icon_size: 48
