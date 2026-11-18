@@ -40,7 +40,7 @@ Descomprime la distribución y conserva juntos sus componentes. Consulta los req
 
 > No necesitas instalar Python ni ningún programa adicional.
 
-1. Ve a [**Releases**](../../releases)
+1. Ve a [**Releases**](https://github.com/JuanEstebanHerreraH/Retorp/releases/tag/Retorp)
 2. Descarga **`RetorpSetup_v1.0.0.exe`**
 3. Ejecuta el instalador y abre **`Retorp`** desde el escritorio
 
