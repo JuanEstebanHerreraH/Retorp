@@ -1,24 +1,19 @@
-<div align="center">
+# Retorp · Network Monitor
 
-<img src="Assets/retorp_logo.png" alt="Retorp Logo" width="120" />
+**Explora dispositivos, puertos e historial de tu red local desde Windows.**
 
-# Retorp — Network Monitor
+Interfaz Flutter con un servicio local Python/FastAPI, herramientas de escaneo y almacenamiento SQLite.
 
-### Monitor de red local para Windows · Sin instalación · Sin cuenta
+**[Descargar Retorp.zip](https://github.com/JuanEstebanHerreraH/Retorp/releases/tag/Retorp)**
 
-*Escaneo ARP · Detección de dispositivos · Puertos · Latencia · Historial*
+Descomprime la distribución y conserva juntos sus componentes. Consulta los requisitos de la versión y las dependencias de escaneo antes de iniciar.
 
----
+**Decisión de implementación:** el servicio local se ocupa del escaneo mientras Flutter presenta dispositivos, latencia e historial.
 
-![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-Windows-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=for-the-badge&logo=windows&logoColor=white)
-![Offline](https://img.shields.io/badge/Config-SQLite_local-F7DF1E?style=for-the-badge&logoColor=black)
+**Alcance:** utiliza el análisis solo en redes propias o autorizadas. El resultado depende de los permisos, los adaptadores, el firewall y la respuesta de los equipos; no garantiza detectar todos los dispositivos.
 
-</div>
-
----
+<details>
+<summary><strong>Funciones, requisitos y documentación técnica</strong></summary>
 
 ## ¿Qué es Retorp?
 
@@ -53,20 +48,6 @@
 
 Si Windows muestra *"aplicación desconocida"* → clic en **"Más información" → "Ejecutar de todas formas"**. Retorp no tiene firma de código de pago, pero el código fuente es 100% público y verificable aquí en GitHub.
 
-### 🔴 Falso positivo de antivirus
-
-Algunos antivirus pueden marcar el ejecutable como sospechoso. **Retorp no es malware.**
-
-**¿Por qué ocurre?**
-Los ejecutables compilados localmente sin firma de distribución comercial pueden disparar heurísticos de machine learning en algunos antivirus. Es un falso positivo documentado que afecta a muchas aplicaciones de código abierto sin firma de código.
-
-**Solución:**
-- Agrega `retorp.exe` a las exclusiones de tu antivirus
-- Verifica el código fuente directamente aquí en el repositorio — es completamente público
-- Si quieres mayor confianza, compílalo tú mismo desde el código fuente (ver sección de desarrolladores)
-
----
-
 ## Cómo usar Retorp
 
 ```
@@ -96,7 +77,7 @@ Los ejecutables compilados localmente sin firma de distribución comercial puede
 ### Ejecutar en modo desarrollo
 
 ```cmd
-git clone https://github.com/TU_USUARIO/retorp.git
+git clone https://github.com/JuanEstebanHerreraH/Retorp.git
 cd retorp
 start.bat
 ```
@@ -165,6 +146,8 @@ netmonitor/
 
 <div align="center">
 
-Construido con Python y Flutter · Windows 10/11 · Sin dependencias externas
+Construido con Python y Flutter · Windows 10/11 · Servicio local y herramientas de escaneo
 
 </div>
+
+</details>
